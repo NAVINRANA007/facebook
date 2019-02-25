@@ -101,7 +101,9 @@ public class methodsFlipkart {
 		String temEmail=temp.mailAddresstxt.getText();
 		driver.switchTo().window(parentWindow);
 		
+		 System.out.println("hello world !!");
 		 return temEmail;
+		
 		
 	}
 }
