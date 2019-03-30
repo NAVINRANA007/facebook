@@ -58,4 +58,19 @@ public class gmailPageLoctor
 	WebElement Submitbtn;
 	@FindBy(how=How.CSS,using="input[id='mailAddress']")
 	WebElement mailAddresstxt;
+	@FindBy(how=How.CSS,using="input[id='mail'] ")
+	WebElement tempMail;
+	@FindBy(how=How.CSS,using="input[name^='reg_email_confirmation']")
+	WebElement mailAddressConfirmation;
+	@FindBy(how=How.CSS,using="input[name='code']")
+	WebElement fbCode;
+	@FindBy(how=How.CSS,using="input[name='code']")
+	WebElement confirmbtn;
+	@FindBy(how=How.CSS,using="div>h4[class='pm-subject']")
+	WebElement mailSubject;
+	@FindBy(how=How.XPATH,using="//table[@id='mails']//tr/td[3]/a")
+	WebElement mailAnchorLink;
+	@FindBy(how=How.CSS,using="button[value='Secure Account']")
+	WebElement secureConnectionbtn;
+	
 }

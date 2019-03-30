@@ -2,6 +2,7 @@ package javaMethods;
 
 import java.io.File;
 import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -40,6 +41,13 @@ public class HarnessFile  {
 		String URL2=properties.getProperty("url2");
 		
 		methods.registrationInputs(driver, URL2);
+		
+		//Verification code
+		String verificationCode=methods.verificationCode(driver);
+		
+		String[] ar=verificationCode.split(" ");
+		String getCode=ar[0];
+		methods.facebookVerification(driver, getCode);
 		
 		
 
